@@ -71,8 +71,8 @@ section article p .article-footer {
 
 .error, .error-width, .success, .warning, .info {
   border: 1px solid #21B179;
-  padding: 15px;
-  width: 40%;
+  padding: 20px;
+  width: 20%;
   color: #21B179;
 }
 

@@ -2,6 +2,8 @@ $font: Helvetica,sans-serif;
 $size24: 24px;
 $color: darkolivegreen;
 $name:"demo";
+$size1:15px;
+$size2:5px;
 
 div.#{$name}{
     font: 100% $font;
@@ -83,8 +85,8 @@ section{
 
 %message{
     border:1px solid #21B179;
-    padding: 15px;
-    width: 40%;
+    padding: ($size1 + $size2);
+    width: (10% * 2);
     color:#21B179
 }
 

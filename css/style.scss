@@ -16,3 +16,57 @@ div.#{$name}{
     border:2px solid blue;
     border-radius: $rad;
 }
+
+#menu{
+    background-color: $color;
+    ul{
+        width: 100%;
+        list-style: none;
+    }
+    li{
+        display: inline-block;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+        padding:8px 16px;
+        display: block;
+        text-align: center;
+        &:hover{
+            text-decoration: underline;
+            color:black;
+        }
+
+    }
+}//#menu end
+
+section{
+    article{
+        .article-header{
+            font-size: 30px;
+            font-weight: bold;
+            color:green;
+            border-bottom: 1px dashed black;
+        }
+        .article-content{
+            font-family: $font;
+            color:#444;
+            a{
+                color:green;
+                text-decoration: none;
+                &:hover{
+                    color:red;
+                    text-decoration: underline;
+                }
+            }
+        }
+        p{
+            .article-footer{
+                font-weight: bold;
+                color:$color;
+                border-top:1px dashed black;
+            }
+        }
+
+    }
+}

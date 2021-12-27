@@ -8,4 +8,30 @@ p.test {
   font-size: 24px;
   background-color: darkolivegreen;
 }
+
+#menu {
+  background-color: darkolivegreen;
+}
+
+#menu ul {
+  width: 100%;
+  list-style: none;
+}
+
+#menu li {
+  display: inline-block;
+}
+
+#menu a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  display: block;
+  text-align: center;
+}
+
+#menu a:hover {
+  text-decoration: underline;
+  color: black;
+}
 /*# sourceMappingURL=main.css.map */

@@ -10,4 +10,58 @@ div.demo {
   border: 2px solid blue;
   border-radius: 3px;
 }
+
+#menu {
+  background-color: darkolivegreen;
+}
+
+#menu ul {
+  width: 100%;
+  list-style: none;
+}
+
+#menu li {
+  display: inline-block;
+}
+
+#menu a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  display: block;
+  text-align: center;
+}
+
+#menu a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+section article .article-header {
+  font-size: 30px;
+  font-weight: bold;
+  color: green;
+  border-bottom: 1px dashed black;
+}
+
+section article .article-content {
+  font-family: Helvetica, sans-serif;
+  color: #444;
+}
+
+section article .article-content a {
+  color: green;
+  text-decoration: none;
+}
+
+section article .article-content a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+section article p .article-footer {
+  font-weight: bold;
+  color: darkolivegreen;
+  border-top: 1px dashed black;
+}
 /*# sourceMappingURL=style.css.map */

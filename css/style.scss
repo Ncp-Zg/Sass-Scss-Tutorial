@@ -1,0 +1,18 @@
+$font: Helvetica,sans-serif;
+$size24: 24px;
+$color: darkolivegreen;
+$name:"demo";
+
+div.#{$name}{
+    font: 100% $font;
+    color:$color;
+    font-size: $size24;
+}
+
+.test{
+    $rad: 3px;
+    font-size: $size24;
+    background-color: $color;
+    border:2px solid blue;
+    border-radius: $rad;
+}

@@ -70,3 +70,58 @@ section{
 
     }
 }
+
+// .error{
+//     border:1px solid red;
+//     color:red;
+// }
+
+.error-width{
+    @extend .error;
+    border-width: 3px;
+}
+
+%message{
+    border:1px solid #21B179;
+    padding: 15px;
+    width: 40%;
+    color:#21B179
+}
+
+.error{
+    @extend %message;
+    border-color: red;
+    color:green
+}
+
+.success{
+    @extend %message;
+    border-color: green;
+    color:green;
+}
+
+.warning{
+    @extend %message;
+    border-color: orange;
+    color:orange;
+}
+
+.info{
+    @extend %message;
+    
+}
+
+.text{
+    font: {
+        family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+        size: 30px;
+        style: normal;
+        weight: bold;
+    }
+    // font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    // font-size: 30px;
+    // font-style: normal;
+    // font-weight: bold;
+
+}
+

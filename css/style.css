@@ -64,4 +64,37 @@ section article p .article-footer {
   color: darkolivegreen;
   border-top: 1px dashed black;
 }
+
+.error-width {
+  border-width: 3px;
+}
+
+.error, .error-width, .success, .warning, .info {
+  border: 1px solid #21B179;
+  padding: 15px;
+  width: 40%;
+  color: #21B179;
+}
+
+.error, .error-width {
+  border-color: red;
+  color: green;
+}
+
+.success {
+  border-color: green;
+  color: green;
+}
+
+.warning {
+  border-color: orange;
+  color: orange;
+}
+
+.text {
+  font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: bold;
+}
 /*# sourceMappingURL=style.css.map */

@@ -118,4 +118,32 @@ section article p .article-footer {
   font-style: normal;
   font-weight: bold;
 }
+
+.fontSize-35 {
+  font-size: 35px;
+}
+
+.fontSize-30 {
+  font-size: 30px;
+}
+
+.fontSize-25 {
+  font-size: 25px;
+}
+
+.fontSize-20 {
+  font-size: 20px;
+}
+
+.fontSize-15 {
+  font-size: 15px;
+}
+
+.fontSize-10 {
+  font-size: 10px;
+}
+
+.fontSize-5 {
+  font-size: 5px;
+}
 /*# sourceMappingURL=style.css.map */

@@ -1,73 +1,70 @@
-
 @import "variables";
 @import "message";
 
-div.#{$name}{
-    font: 100% $font;
-    color:$color;
-    font-size: $size24;
+div.#{$name} {
+  font: 100% $font;
+  color: $color;
+  font-size: $size24;
 }
 
-.test{
-    $rad: 3px;
-    font-size: $size24;
-    background-color: $color;
-    border:2px solid blue;
-    border-radius: $rad;
+.test {
+  $rad: 3px;
+  font-size: $size24;
+  background-color: $color;
+  border: 2px solid blue;
+  border-radius: $rad;
 }
 
-#menu{
-    background-color: $color;
-    ul{
-        width: 100%;
-        list-style: none;
+#menu {
+  background-color: $color;
+  ul {
+    width: 100%;
+    list-style: none;
+  }
+  li {
+    display: inline-block;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    display: block;
+    text-align: center;
+    &:hover {
+      text-decoration: underline;
+      color: black;
     }
-    li{
-        display: inline-block;
+  }
+} //#menu end
+
+section {
+  article {
+    .article-header {
+      font-size: 30px;
+      font-weight: bold;
+      color: green;
+      border-bottom: 1px dashed black;
     }
-    a{
-        color: white;
+    .article-content {
+      font-family: $font;
+      color: #444;
+      a {
+        color: green;
         text-decoration: none;
-        padding:8px 16px;
-        display: block;
-        text-align: center;
-        &:hover{
-            text-decoration: underline;
-            color:black;
+        &:hover {
+          color: red;
+          text-decoration: underline;
         }
-
+      }
     }
-}//#menu end
-
-section{
-    article{
-        .article-header{
-            font-size: 30px;
-            font-weight: bold;
-            color:green;
-            border-bottom: 1px dashed black;
-        }
-        .article-content{
-            font-family: $font;
-            color:#444;
-            a{
-                color:green;
-                text-decoration: none;
-                &:hover{
-                    color:red;
-                    text-decoration: underline;
-                }
-            }
-        }
-        p{
-            .article-footer{
-                font-weight: bold;
-                color:$color;
-                border-top:1px dashed black;
-            }
-        }
-
+    p {
+      .article-footer {
+        font-weight: bold;
+        color: $color;
+        border-top: 1px dashed black;
+      }
     }
+  }
 }
 
 // .error{
@@ -75,22 +72,45 @@ section{
 //     color:red;
 // }
 
-.error-width{
-    @extend .error;
-    border-width: 3px;
+.error-width {
+  @extend .error;
+  border-width: 3px;
 }
 
+.text {
+  font: {
+    family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    size: 30px;
+    style: normal;
+    weight: bold;
+  }
+  // font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+  // font-size: 30px;
+  // font-style: normal;
+  // font-weight: bold;
+}
 
-.text{
-    font: {
-        family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-        size: 30px;
-        style: normal;
-        weight: bold;
+// $sizes: 5px, 10px, 15px, 20px, 25px, 30px, 35px;
+// @each $size in $sizes {
+//   .fontSize-#{$size} {
+//     font-size: $size;
+//   }
+// }
+
+// @for $value from 1 through 7 {
+//   $value: $value * 5;
+//   .fontSize-#{$value} {
+//     font-size: 1px * $value;
+//   }
+// }
+
+
+$x:7;
+$size:5px;
+@while $x>0{
+    $test:$x*5;
+    .fontSize-#{$test}{
+        font-size: $size * $x;
     }
-    // font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-    // font-size: 30px;
-    // font-style: normal;
-    // font-weight: bold;
-
+    $x: $x - 1;
 }

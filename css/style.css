@@ -114,36 +114,39 @@ section article p .article-footer {
 
 .text {
   font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-  font-size: 30px;
+  font-size: 18;
   font-style: normal;
   font-weight: bold;
+  border: 1px solid black;
+  width: 20%;
+  padding: 5px;
 }
 
-.fontSize-35 {
-  font-size: 35px;
-}
-
-.fontSize-30 {
-  font-size: 30px;
-}
-
-.fontSize-25 {
-  font-size: 25px;
-}
-
-.fontSize-20 {
-  font-size: 20px;
-}
-
-.fontSize-15 {
-  font-size: 15px;
+.fontSize-5 {
+  font-size: 5px;
 }
 
 .fontSize-10 {
   font-size: 10px;
 }
 
-.fontSize-5 {
-  font-size: 5px;
+.fontSize-15 {
+  font-size: 15px;
+}
+
+.fontSize-20 {
+  font-size: 20px;
+}
+
+.fontSize-25 {
+  font-size: 25px;
+}
+
+.fontSize-30 {
+  font-size: 30px;
+}
+
+.fontSize-35 {
+  font-size: 35px;
 }
 /*# sourceMappingURL=style.css.map */

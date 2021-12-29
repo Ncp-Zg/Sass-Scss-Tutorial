@@ -77,13 +77,33 @@ section {
   border-width: 3px;
 }
 
+$number: -32px;
+$paddings: 5px, 10px, 20px;
 .text {
   font: {
     family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-    size: 30px;
+    // size: abs($number);
+    // size: ceil(27.2px);
+    size: random(100);
     style: normal;
     weight: bold;
   }
+  border: round(1.2px) solid black;
+  //   padding: floor(14.9px);
+//   padding: min($paddings...);
+  width: percentage(0.2); // 20%
+
+//   @if unitless(7){
+//       padding: min($paddings...)
+//   }@else{
+//       padding: max($paddings...)
+//   }
+  @if comparable(7px,1px){
+      padding: min($paddings...)
+  }@else{
+      padding: max($paddings...)
+  }
+
   // font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
   // font-size: 30px;
   // font-style: normal;
@@ -101,16 +121,26 @@ section {
 //   $value: $value * 5;
 //   .fontSize-#{$value} {
 //     font-size: 1px * $value;
+// font-size: #{value}px;
 //   }
 // }
 
+// $x:7;
+// $size:5px;
+// @while $x>0{
+//     $test:$x*5;
+//     .fontSize-#{$test}{
+//         font-size: $size * $x;
+//     }
+//     $x: $x - 1;
+// }
 
-$x:7;
-$size:5px;
-@while $x>0{
-    $test:$x*5;
-    .fontSize-#{$test}{
-        font-size: $size * $x;
-    }
-    $x: $x - 1;
+@function Process($num) {
+  @return #{$num * 5}px;
+}
+
+@for $value from 1 through 7 {
+  .fontSize-#{$value*5} {
+    font-size: Process($value);
+  }
 }

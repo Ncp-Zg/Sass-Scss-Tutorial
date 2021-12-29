@@ -81,10 +81,19 @@ $number: -32px;
 $paddings: 5px, 10px, 20px;
 .text {
   font: {
-    family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    // family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    // family:quote(Helvetica);
+    // #{unquote("family")}:quote(Helvetica);
+    // family:str-index("Helvetica Neue", "Helvetica");
+    // family:str-insert("Roboto  Bold", "Mono", 8);
     // size: abs($number);
     // size: ceil(27.2px);
-    size: random(100);
+    // size: random(100);
+    // family:str-slice("Helvetica Neue",1,9);
+    // family:to-upper-case("Helvetica Neue");
+    // family:to-lower-case("HELVETICA Neue");
+    family:unique-id();
+    size: #{str-length("Helvetica Neue")}px;
     style: normal;
     weight: bold;
   }

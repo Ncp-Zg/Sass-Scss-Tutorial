@@ -1,3 +1,9 @@
+.example {
+  padding: 15px;
+  background-color: lime;
+  color: tomato;
+}
+
 .error, .error-width, .success, .warning, .info {
   border: 1px solid #21B179;
   padding: 20px;
@@ -10,6 +16,8 @@
   color: green;
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  width: 400px;
+  border-radius: 200px;
 }
 
 .success {
@@ -17,6 +25,7 @@
   color: green;
   border-top-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  width: 400px;
 }
 
 .warning {
@@ -27,9 +36,9 @@
 }
 
 .info {
-  -webkit-transform: rotate(30deg);
-  -ms-transfrom: rotate(30deg);
-  transform: rotate(30deg);
+  -webkit-transform: rotate(5deg);
+  -ms-transfrom: rotate(5deg);
+  transform: rotate(5deg);
 }
 
 div.demo {

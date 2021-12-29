@@ -1,5 +1,21 @@
 @import "variables";
 
+$haki-background: darkkhaki;
+$haki-text: black;
+$light-background:lime;
+$light-text:tomato;
+
+@mixin Colors($value){
+    padding: 15px;
+    @if $value{
+        background-color: $haki-background;
+        color:$haki-text;
+    }@else{
+        background-color: $light-background;
+        color:$light-text;
+    }
+}
+
 @mixin boxRadius($value){
     border-top-left-radius: $value;
     border-bottom-right-radius: $value;
@@ -9,6 +25,38 @@
     -webkit-transform:$value;
     -ms-transfrom:$value;
     transform:$value;
+}
+
+@mixin special($size,$circle:false){
+    width: $size;
+    @if $circle{
+        border-radius: $size / 2;
+    }
+}
+
+@mixin ucgen($size,$color,$direction){
+    height: 0;
+    width: 0;
+    background-color: transparent;
+    border-style: solid;
+    border-width: $size/2;
+    @if $direction == up {
+        border-bottom-color: $color;
+    }@else if $direction == right{
+        border-left-color: $color;
+    }@else if $direction == down {
+        border-top-color:$color;
+    }@else if $direction == left{
+        border-right-color: $color;
+    }@else{
+        @error "Bilinmeyen yön #{$direction}"
+    }
+
+}
+
+.example{
+    // @include ucgen(100px,blue,down)
+    @include Colors(false)
 }
 
 %message{
@@ -23,6 +71,7 @@
     border-color: red;
     color:green;
     @include boxRadius(20px);
+    @include special(400px,true )
     
 }
 
@@ -31,6 +80,7 @@
     border-color: green;
     color:green;
     @include boxRadius(10px);
+    @include special(400px,false )
 }
 
 .warning{
@@ -42,6 +92,6 @@
 
 .info{
     @extend %message;
-    @include boxTransform(rotate(30deg));
+    @include boxTransform(rotate(5deg));
     
 }

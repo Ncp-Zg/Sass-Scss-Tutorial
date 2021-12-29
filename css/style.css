@@ -113,12 +113,32 @@ section article p .article-footer {
 }
 
 .text {
-  font-family: u05cc958b;
+  font-family: u9b2c93d4;
   font-size: 14px;
   font-style: normal;
   font-weight: bold;
   border: 1px solid black;
   width: 20%;
+  padding: 5px;
+}
+
+.text1 {
+  font-family: "Helvetica Neue";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: bold;
+  border: 2px solid black;
+  background-color: #0c56cf;
+  padding: 5px;
+}
+
+.text2 {
+  font-family: "Helvetica Neue";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: bold;
+  border: 2px solid black;
+  background-color: #95bbf9;
   padding: 5px;
 }
 

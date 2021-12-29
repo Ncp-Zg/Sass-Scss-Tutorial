@@ -119,6 +119,56 @@ $paddings: 5px, 10px, 20px;
   // font-weight: bold;
 }
 
+
+.text1 {
+  font: {
+    family:"Helvetica Neue" ;
+    size: #{str-length("Helvetica Neue")}px;
+    style: normal;
+    weight: bold;
+  }
+  border: round(1.7px) solid black;
+//   background-color: rgb(255,0,0);
+//   background-color: hsl(120,100%,25%);
+//   background-color: grayscale(#ff0000);
+//   background-color: complement(#357DF3);
+//   background-color: invert(#357DF3);
+//   background-color: red(red);
+//   background-color: hue(#357DF3);
+//   background-color: alpha(rgba(200,145,100,0.5));
+//   background-color: opacity(rgba(200,145,100,0.5));
+//   background-color: mix(red,green,50%);
+//   background-color: change-color(#357DF3, $red:200);
+  background-color: darken(#357DF3, 15);
+  @if comparable(7px,1px){
+      padding: min($paddings...)
+  }@else{
+      padding: max($paddings...)
+  }
+}
+
+.text2 {
+  font: {
+    family:"Helvetica Neue" ;
+    size: #{str-length("Helvetica Neue")}px;
+    style: normal;
+    weight: bold;
+  }
+  border: round(1.7px) solid black;
+//   background-color: rgba(255,0,0,0.4);
+//   background-color: hsla(120,100%,25%,0.4);
+// background-color: saturation(#357DF3);
+// background-color: lightness(#357DF3);
+// background-color: adjust-hue(#357DF3,90deg);
+background-color: lighten(#357DF3,20);
+  @if comparable(7px,1px){
+      padding: min($paddings...)
+  }@else{
+      padding: max($paddings...)
+  }
+}
+
+
 // $sizes: 5px, 10px, 15px, 20px, 25px, 30px, 35px;
 // @each $size in $sizes {
 //   .fontSize-#{$size} {

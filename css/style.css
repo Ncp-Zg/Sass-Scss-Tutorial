@@ -1,3 +1,37 @@
+.error, .error-width, .success, .warning, .info {
+  border: 1px solid #21B179;
+  padding: 20px;
+  width: 20%;
+  color: #21B179;
+}
+
+.error, .error-width {
+  border-color: red;
+  color: green;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.success {
+  border-color: green;
+  color: green;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.warning {
+  border-color: orange;
+  color: orange;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.info {
+  -webkit-transform: rotate(30deg);
+  -ms-transfrom: rotate(30deg);
+  transform: rotate(30deg);
+}
+
 div.demo {
   font: 100% Helvetica, sans-serif;
   color: darkolivegreen;
@@ -67,28 +101,6 @@ section article p .article-footer {
 
 .error-width {
   border-width: 3px;
-}
-
-.error, .error-width, .success, .warning, .info {
-  border: 1px solid #21B179;
-  padding: 20px;
-  width: 20%;
-  color: #21B179;
-}
-
-.error, .error-width {
-  border-color: red;
-  color: green;
-}
-
-.success {
-  border-color: green;
-  color: green;
-}
-
-.warning {
-  border-color: orange;
-  color: orange;
 }
 
 .text {

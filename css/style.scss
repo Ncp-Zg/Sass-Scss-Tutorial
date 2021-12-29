@@ -1,9 +1,6 @@
-$font: Helvetica,sans-serif;
-$size24: 24px;
-$color: darkolivegreen;
-$name:"demo";
-$size1:15px;
-$size2:5px;
+
+@import "variables";
+@import "message";
 
 div.#{$name}{
     font: 100% $font;
@@ -83,35 +80,6 @@ section{
     border-width: 3px;
 }
 
-%message{
-    border:1px solid #21B179;
-    padding: ($size1 + $size2);
-    width: (10% * 2);
-    color:#21B179
-}
-
-.error{
-    @extend %message;
-    border-color: red;
-    color:green
-}
-
-.success{
-    @extend %message;
-    border-color: green;
-    color:green;
-}
-
-.warning{
-    @extend %message;
-    border-color: orange;
-    color:orange;
-}
-
-.info{
-    @extend %message;
-    
-}
 
 .text{
     font: {
@@ -126,4 +94,3 @@ section{
     // font-weight: bold;
 
 }
-

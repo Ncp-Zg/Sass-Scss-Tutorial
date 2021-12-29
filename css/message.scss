@@ -1,0 +1,47 @@
+@import "variables";
+
+@mixin boxRadius($value){
+    border-top-left-radius: $value;
+    border-bottom-right-radius: $value;
+}
+
+@mixin boxTransform($value){
+    -webkit-transform:$value;
+    -ms-transfrom:$value;
+    transform:$value;
+}
+
+%message{
+    border:1px solid #21B179;
+    padding: ($size1 + $size2);
+    width: (10% * 2);
+    color:#21B179
+}
+
+.error{
+    @extend %message;
+    border-color: red;
+    color:green;
+    @include boxRadius(20px);
+    
+}
+
+.success{
+    @extend %message;
+    border-color: green;
+    color:green;
+    @include boxRadius(10px);
+}
+
+.warning{
+    @extend %message;
+    border-color: orange;
+    color:orange;
+    @include boxRadius(15px);
+}
+
+.info{
+    @extend %message;
+    @include boxTransform(rotate(30deg));
+    
+}

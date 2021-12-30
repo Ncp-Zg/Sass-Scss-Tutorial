@@ -113,7 +113,7 @@ section article p .article-footer {
 }
 
 .text {
-  font-family: u9b2c93d4;
+  font-family: u59815a18;
   font-size: 14px;
   font-style: normal;
   font-weight: bold;
@@ -168,5 +168,29 @@ section article p .article-footer {
 
 .fontSize-35 {
   font-size: 35px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+#main li {
+  float: left;
+  width: 8.125%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+}
+
+#main li:nth-child(8n) {
+  margin-right: 0;
+}
+
+#main li img {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
